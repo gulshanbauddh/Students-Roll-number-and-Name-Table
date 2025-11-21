@@ -11,18 +11,16 @@
     <div class="container">
       <h1>Students Roll number and Name Table :</h1>
       <form>
-        <input
-          placeholder=" Roll number"
-          type="number"
-          id="rollNo"
-        /><br /><br />
-        <input placeholder=" Name" type="text" id="name" /><br /><br />
-        <input type="radio" name="gender" value=" Male" /> Male
-        <input type="radio" name="gender" value=" Female" /> Female
-        <input type="radio" name="gender" value=" Other" /> Other <br />
+        <input placeholder=" Roll number" type="number" id="rollNo" /> <br />
+        <input placeholder=" Name" type="text" id="name" /> <br />
+        <div class="gender">
+          <input type="radio" name="gender" value=" Male" /> Male
+          <input type="radio" name="gender" value=" Female" /> Female
+          <input type="radio" name="gender" value=" Other" /> Other <br />
+        </div>
         <br />
-        <input value="Insert Into Table" type="button" onclick="insTable()" />
       </form>
+      <input value="Insert Into Table" type="button" onclick="insTable()" />
       <div id="table">
         <br />
         <table border="1" cellspacing="0" cellpadding="8">
